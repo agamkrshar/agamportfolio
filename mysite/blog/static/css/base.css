@@ -1,0 +1,29 @@
+.para{
+  font-family: 'Merienda', cursive;
+}
+
+.footor{
+  font-size: 1.5em;
+  color: white;
+  font-family: 'Merienda', cursive;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx0nV1gEQkkkGDpHDf-qC2hArdcSZOkXaIeqoKiIFJR91NjinNGQ);
+
+}
+
+.body{
+  background-color: #DCDCDD;
+}
+
+#navbarNav{
+  font-style: italic;
+  font-family: 'Merienda', cursive;
+
+
+
+.navbar-light .navbar-nav .active>.nav-link{
+  color:;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color:;
+}

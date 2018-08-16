@@ -1,0 +1,176 @@
+<!doctype html>
+{% load staticfiles %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>Agam Sharma Portfolio</title>
+<style media="screen">
+.fonta{
+  font-family: 'PT Serif', serif;
+}
+.navbar-nav li{
+  padding-right: 20px;
+}
+html, body{
+  height: 100%;
+  width: 100%
+  color:#222;
+
+}
+
+.navbar{
+  padding: .8rem;
+}
+
+.nav-link{
+  font-size: 1.1em !important;
+}
+.carousel-inner img{
+  width: 100%;
+  height: 100%;
+}
+.carousel-caption{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-caption h1{
+  font-size: 300%;
+  text-shadow: 200px 200px 2000x #ea4827;
+}
+
+footer{
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+
+}
+hr.light{
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+}
+.social a{
+    padding: 20px;
+    font-size: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.fa-facebook{
+  color: #3b5998;
+}
+.fa-twitter{
+  color: #00aced;
+}
+.fa-google{
+  color: #dd4b39;
+}
+.fa-instagram{
+  color: #517fa4;
+}
+.fa-youtube{
+  color: #bb0000;
+}
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-google:hover,
+.fa-instagram:hover,
+.fa-youtube:hover{
+  color: #d5d5d5;
+}
+</style>
+
+  </head>
+  <body class="fonta">
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brad" href="#">Agam</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+            <a class="nav-link active"href="{% url 'index' %}">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link"href="{% url 'blog:about' %}">About</a>
+            </li
+            <li class="nav-item">
+            <a class="nav-link"href="#">Blog</a>
+            </li
+            <li class="nav-item">
+            <a class="nav-link"href="{% url 'blog:contact_list' %}">Contact us</a>
+            </li
+
+          </ul>
+
+        </div>
+
+
+      </div>
+
+    </nav>
+
+    <!--sliders starts from here-->
+{% block body_block %}
+ {% endblock %}
+  <div class="container-fluid padding">
+    <div class="row text-center padding">
+      <div class="col-12">
+        <h2>Connect</h2>
+      </div>
+      <div class="col-12 social padding">
+        <a href="https://www.facebook.com/profile.php?id=100009401161822" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/kumaragamsharma"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-google"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="https://www.instagram.com/kumaragamsharma/"><i class="fa fa-instagram"></i></a>
+
+
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="container-fluid padding">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <h2>Address</h2>
+          <hr class="light">
+          <p>+91-9128724276</p>
+          <p>kumaragamsharma@gmail.com</p>
+          <p>Adityapur, Jharkhand, India</p>
+        </div>
+        <div class="col-12">
+          <hr class="light">
+          <h5>&copy; agamsharma.com</h5>
+
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
